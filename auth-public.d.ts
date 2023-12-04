@@ -20,3 +20,5 @@ export declare function sendEmailVerification(user: User, actionCodeSettings?: A
 export declare function signInWithEmailAndPassword(auth: Auth, email: string, password: string): Promise<UserCredential>;
 
 export declare function onAuthStateChanged(auth: Auth, nextOrObserver: NextOrObserver<User>, error?: ErrorFn | null, completed?: CompleteFn | null): Unsubscribe;
+
+export declare function signOut(auth: Auth): Promise<void>;
