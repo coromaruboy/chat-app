@@ -22,3 +22,5 @@ export declare function signInWithEmailAndPassword(auth: Auth, email: string, pa
 export declare function onAuthStateChanged(auth: Auth, nextOrObserver: NextOrObserver<User>, error?: ErrorFn | null, completed?: CompleteFn | null): Unsubscribe;
 
 export declare function signOut(auth: Auth): Promise<void>;
+
+export declare function onChildAdded(query: Query, callback: (snapshot: DataSnapshot, previousChildName?: string | null) => unknown, cancelCallback?: (error: Error) => unknown): Unsubscribe;
